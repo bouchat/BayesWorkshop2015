@@ -1,0 +1,149 @@
+\documentclass[11pt, leqno, fleqn]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts, amsmath, amssymb}
+\renewcommand{\rmdefault}{pplx}
+\usepackage[sc]{mathpazo}
+\usepackage{eulervm}
+\usepackage{multirow, multicol}
+\usepackage{epsfig, subfigure, subfloat, graphicx}
+\usepackage{anysize, indentfirst, setspace}
+\usepackage{color}
+
+\usepackage{hyperref}
+\usepackage{titling}
+\usepackage[margin=.8in]{geometry}
+\usepackage[small, compact]{titlesec}
+\usepackage{fancyvrb}
+\setlength{\droptitle}{-5em}
+
+\title{\Large{999: Workshop in Bayesian Analysis \vspace{-2ex}}}
+\author{\vspace{-1ex}\normalsize{Instructor of Record: John Ahlquist}}
+\date{\vspace{-1ex}\normalsize{Spring 2015}}
+\begin{document}
+\maketitle
+\vspace{-20pt}
+\section*{Course Overview}
+\noindent This is a collaborative independent reading about Bayesian methods in political science. There are no weekly assignments for this independent study. Weekly meetings will be optional except for the final session for project presentation and feedback. Those in attendance at the weekly meeting space will watch video lectures (courtesy of Justin Esarey) as a group, and will discuss the lecture and the readings, time permitting. This syllabus guides the expectations for each student enrolled in the independent study, and borrows heavily from syllabi constructed by Simon Jackman, Justin Esarey, and Patrick Brandt.\\
+
+\noindent A time and location for joint session meetings are TBA and will be announced via email to enrolled students and informal attendees during the first week of classes. Contents of the syllabus are subject to change. Course readings will be collected and disseminated through Box.\\
+
+\section*{Texts \& Software}
+\begin{itemize}
+\item[] Jackman, Simon. 2009. Bayesian Analysis for the Social Sciences. Wiley. {\bf(Most closely followed)}
+\item[] Gelman, Carlin, Stern, and Rubin. Bayesian Data Analysis, Third Edition. Chapman and Hall/CRC. {\bf(Recommended, listed as ``BDA3'')}
+\item[] Gelman, Andrew, and Jennifer Hill. 2007. Data Analysis Using Regression and Multilevel/Hierarchical Models. Cambridge. {\bf(Recommended)}
+\item[] Hoff, Peter D. 2009. A First course in Bayesian Statistical Methods. New York: Springer. {\bf (Recommended)}
+\end{itemize}
+This course is structured primarily around the use of \textsf{R} for analysis, although reference will also be made to OpenBugs (formerly WinBugs) and JAGS. If time allows, programming more complex models in Stan will also be addressed.\\
+
+\section*{Assignments \& Due Dates}
+\noindent Assignments for this class depend on whether students enroll for the 2 or 3 credit option, but are geared toward being able to understand and practically apply Bayesian methods to a research question. {\bf Final projects are due one week after the last joint meeting session, at 5 pm.}
+\begin{itemize}
+\item Project Abstract: Regardless of credit status, all enrolled students will submit an abstract for their final project on {\bf (Week 8 DATE TBA)} of no more than 350 words (2000 characters). Abstracts should describe the research question, data, methods, and expected findings. Abstracts are expected to be of the format accepted for applications to the Political Methodology conference.
+\item Research Design (2 credit option): The final project for 2 credits is a research design of no more than 10 double-spaced pages. The research design will outline a project using Bayesian methods and discuss tradeoffs of this approach without performing the analysis. The research design could, for example, begin as a critique of an existing project using a frequentist approach and discuss the merits and potential value of pursuing the project in a Bayesian framework.
+\item Paper or Poster (3 credit option): The final project for 3 credits is either a final paper of no more than 15 double-spaced pages or a poster that could be used for a conference such as Political Methodology. The paper/poster will address a question of social scientific interest and present findings based on analysis using Bayesian methods.
+\end{itemize}
+
+\section*{Course Meetings \& Readings}
+\subsection*{Week 1: Background and Theory of Bayesian Inference [No meeting, organizational]}
+	\begin{enumerate}
+	\item[] Jackman, Ch. 1--2.
+	\item[] Jackman, Simon. 2004.``Bayesian Analysis for Political
+Research.'' Annual Review of Political Science 7: 483-505.
+	\item[] Paxton et al. 2001. ``Monte Carlo Experiments: Design and Implementation.'' Structural Equation Modeling 8(2): 287-312. \url{http://www.unc.edu/~curran/pdfs/Paxton,Curran,Bollen,Kirby&Chen(2001).pdf}
+	%\item[] Gill, Ch. 1--3
+	\end{enumerate}
+\subsection*{Week 2: Theory of Bayesian Inference, cont'd. (Single and multi-parameter models, relation to non-Bayesian techniques)}
+	\begin{enumerate}
+	\item[] BDA3, Ch. 1--4
+	\item[] Sivia, Devinderjit and John Skilling. 1996. Data Analysis: A Bayesian Tutorial, 2nd Edition. Oxford: Oxford University Press. Ch. 1--2
+	%\item[] Gill, Ch. 8--9
+	\end{enumerate}
+\subsection*{Week 3: Posteriors and Sampling from Distributions/MCMC, BUGS, and JAGS}
+	\begin{enumerate}
+	\item[] Jackman, Ch. 3--6
+	\item[] BDA3, Ch. 10--12 (skim)
+	\item[] The WinBUGS manual, particularly the Tutorial section. \url{http://cran.r-
+project.org/web/packages/R2WinBUGS/vignettes/R2WinBUGS.pdf}
+	\item[] Sturtz et al. ``R2WinBUGS: A Package for Running WinBUGS from R.'' \url{http://cran.r-project.org/web/packages/R2WinBUGS/vignettes/R2WinBUGS.pdf}
+	\item[] The MCMCpack manual \url{http://mcmcpack.wustl.edu/files/MCMCpack-manual.pdf}
+	%\item[] Gill, Chapter 12
+	\end{enumerate}
+\subsection*{Week 4: Bayesian Hierarchical Models}
+	\begin{enumerate}
+	\item[] Gelman and Hill, Ch. 11--13, 16
+	\item[] BDA3, Ch. 15
+	\item[] Jackman, Ch. 7
+	\end{enumerate}
+\subsection*{Week 5: Latent Variable Models \& Item Response Theory}
+	\begin{enumerate}
+	\item[] Jackman, Ch. 9
+	\item[] Ayala, R. J. 2009. The Theory and Practice of Item Response Theory. Guilford. Ch. 1--2, 5
+	\item[] Curtis., S., McKay. 2010. ``BUGS Code for Item Response Theory.'' Journal of
+Statistical Software 36: Code Snippet 1. \url{
+www.jstatsoft.org/v36/c01/paper/}
+	\item[] Clinton, Joshua, Simon Jackman, and Douglas Rivers. ``The Statistical Analysis
+of Roll Call Data.'' American Political Science Review 98(2): 355-370.
+	\end{enumerate}
+\subsection*{Week 6: Model Checking}
+	\begin{enumerate}
+	\item[] BDA3, Ch. 6--7
+	\item[] Kutner, Nachtsheim, Neter, and Li. Applied Linear Statistical Models, 5th ed.
+McGraw Hill-Irwin. Ch. 9--10
+	\item[] Jackman, Ch. 8
+	\end{enumerate}
+\subsection*{Week 7: Imputation}
+	\begin{enumerate}
+	\item[] Gelman and Hill, Ch. 25
+	\item[] BDA3, Ch. 18
+	\item[] van Buuren and Groothuis-Oudshoorn. 2011. ``mice: Multivariate Imputation
+by Chained Equations in R.'' Journal of Statistical Software 45(3). \url{http://www.jstatsoft.org/v45/i03/}
+	\end{enumerate}
+\subsection*{Week 8: Multilevel Regression [Project abstract due]}
+	\begin{enumerate}
+	\item[] Park, David, Andrew Gelman, and Joseph Bafumi. 2004. ``Bayesian Multilevel Estimation with Poststratification: State-Level Estimates from National Polls.'' Political Analysis 12(4): 375-385.
+	\item[] Lax, Jeffrey and Justin Phillips. 2009. ``How Should We Estimate Public Opinion in the States?'' American Journal of Political Science 53(1): 107-121.
+	\end{enumerate}
+\subsection*{Week 9: Discussion of Applications}
+	\begin{enumerate}
+	\item[] Lindstadt, Rene, Jonathan B. Slapin, and Ryan J. Vander Wielen. 2011. ``Balancing Competing Demands: Position Taking and Election Proximity in the European Parliament.'' Legislative Studies Quarterly 36: 37-70. \url{http://goo.gl/XQkucs}
+	\item[] Brandt, Patrick T. and John R. Freeman. 2009. ``Modeling Macro-Political Dynamics.'' Political Analysis 17: 113-142. \url{http://goo.gl/UQDOSm}
+ 	\item[] Gill, Jeff and John R. Freeman (forthcoming) ``Dynamic Elicited Priors for
+ Updating Covert Networks,'' Network Science.
+	\item[] Montgomery, Jacob and Brendan Nylan. 2010. ``Bayesian Model Averaging:
+ Theoretical Developments and Practical Applications.'' Political Analysis 18(2):
+ 245-270.
+ 	\item[] Montgomery, Jacob M., Florian M. Hollenbach, and Michael D. Ward. 2012.
+``Improving Predictions Using Ensemble Bayesian Model Averaging.''
+Political Analysis 20(3): 271-291.
+	\item[] Western, Bruce and Simon Jackman. 1994. ``Bayesian Inference for Comparative
+ Research.'' American Political Science Review 88: 412-423.
+	\end{enumerate}
+\subsection*{Week 10: Bayesian Decision Theory}
+	\begin{enumerate}
+	\item[] BDA3, Ch. 9
+	\item[] E. T. Jaynes. Probability Theory: The Logic of Science. Ch. 13--14
+	\item[] Valen Johnson, ``Revised standards for statistical evidence.'' Proceedings of the National Academy of Sciences, forthcoming. \url{http://www.pnas.org/content/early/2013/10/28/1313476110.abstract}
+	\item[] Murphy et al. Statistical Power Analysis: A Simple and General Model for Traditional and Modern Hypothesis Tests, Third Edition. Ch. 1--2
+	\item[] Justin Esarey and Nathan Danneman. ``A Quantitative Method for Substantive Robustness Assessment.'' \url{http://jee3.web.rice.edu/riskstats.pdf}
+	\end{enumerate}
+\subsection*{Week 11: No meeting, Spring Break}
+\subsection*{Week 12: Bayesian Spatial Autoregression}
+	\begin{enumerate}
+	\item[] Lee, Duncan. 2013. ``CARBayes: An R package for Bayesian Spatial Modeling with Conditional Autoregressive Priors.'' Journal of Statistical Software 55(13): 1-24. \url{http://www.jstatsoft.org/v55/i13/paper}
+	\item[] Beck, Nathaniel, Kristian Skrede Gleditsch, and Kyle Beardsley. 2006. ``Space is More than Geography: Using Spatial Econometrics in the Study of Political Economy.'' International Studies Quarterly 50: 27-44. \url{http://www.nyu.edu/gsas/dept/politics/faculty/beck/isq_reprint.pdf}
+	\item[] Besag, York, and Mollie, ``Bayesian Image Restoration, with Two Applications in Spatial Statistics.'' Annals of the Institute of Statistical Mathematics 43(1): 1-59. \url{http://www.ism.ac.jp/editsec/aism/pdf/043_1_0001.pdf}
+	\end{enumerate}
+\subsection*{Week 13: Advanced topics [Optional]}
+	\begin{enumerate}
+	\item[]  Sequential MCMC and Particle Filters: Lopes, Hedibart and Ruey Tsay. 2010. ``Particle Filters and Bayesian Inference in Financial Econometrics.'' Journal of Forecasting 30: 168--209.
+	\item[] Building a new Bayesian model from scratch: Brandt, Patrick T. and Todd Sandler. 2012. ``A Bayesian Poisson Vector Autoregression Model.'' Political Analysis. 20(3): 292--315.
+	\end{enumerate}
+\subsection*{Week 14: Workshopping projects}
+	\begin{enumerate}
+	\item[] Each participant will briefly present their progress on their project and receive feedback from other participants
+	\end{enumerate}
+
+\end{document}
+	
+	
