@@ -7,7 +7,7 @@ Week		Name
 4			Nat
 5			Annie
 6			Sarah
-7			Sarah
+7			Nat
 8     Zach
 9
 10
